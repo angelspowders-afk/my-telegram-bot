@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from .handlers import handlers_router
+from tgbolt.handlers import handlers_router
 from .services import broadcaster
 
 from config import config
