@@ -6,10 +6,10 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.storage.memory import MemoryStorage
 
-from tgbot.handlers import handlers_router
-from tgbot.services import broadcaster
+from .handlers import handlers_router
+from .services import broadcaster
 
-from tgbot import config
+from config import config
 
 
 async def on_startup(bot: Bot, admin_ids: list[int] = config.tg_bot.admin_ids):
